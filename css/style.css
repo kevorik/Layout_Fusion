@@ -171,6 +171,9 @@ body {
   .page__container--left{
     min-width: 100%;
   }
+  .page__logo {
+    padding: 0px 0px 0px 0px;
+  }
   .page__container--right{
     min-width: 100%;
     padding: 51px 0px 0px 0px;
@@ -183,14 +186,17 @@ body {
   }
   .container__right--text {
     font-weight: 400;
+    padding: 0px 26px 0px 26px;
+    font-size: 14px;
     line-height: 19px;
     text-align: center;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 403px) {
   .container__right--title {
+    padding: 0px 36px 0px 36px;
     font-family: Roboto;
-    font-size: 36px;
+    font-size: 29px;
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 0em;
@@ -227,12 +233,19 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 805px) {
   .about__container {
     padding: 91px 26px 82px 26px;
+    gap: 42px;
+  }
+  .about__title {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .about__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 /* ---NUMBERS----------------------------------------------------------------------- */
@@ -246,6 +259,131 @@ body {
   align-items: center;
   min-height: 250px;
 }
+.numbers__container--img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.numbers__img {
+  min-width: 50px;
+  min-height: 50px;
+}
+.numbers__container--number {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.numbers__container--projects {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.numbers__container--number1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: red
+}
+.numbers__container--projects1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: red;
+}
+.numbers__container--number2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: blue;
+}
+.numbers__container--projects2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: blue;
+}
+.numbers__container--number3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: green;
+}
+.numbers__container--projects3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: green;
+}
+.numbers__container--number4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: yellow;
+}
+.numbers__container--projects4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: yellow;
+}
+.numbers__container--number5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: violet;
+}
+.numbers__container--projects5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: violet;
+}
+
+
 
 /* ---NUMBERS MEDIA----------------------------------------------------------------------- */
 @media only screen and (min-width: 320px) and (max-width: 805px) {
@@ -271,11 +409,14 @@ body {
   justify-content: center;
 }
 .skills__left--title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 32px;
   font-weight: 500;
   line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
+  padding: 0px 0px 50px 0px;
 }
 .skills__left--text {
   font-size: 16px;
@@ -283,17 +424,27 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #727272;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 20px 0px;
 }
-.skills__left--img {
+.line-container {
   position: relative;
+  width: 78%;
+  padding: 0px 0px 29px 0px;
+}
+.gray-line, .blue-line {
+  height: 2px;
+  position: absolute;
+  top: 0;
+}
+.gray-line {
+  background-color: #C4C4C4;
   width: 100%;
-  height: auto;
 }
-.skills__img {
-  position: absolute;
-}
-.skills__img--blue{
-  position: absolute;
+.blue-line {
+  background-color: #34547A;
+  width: 70%;
 }
 .skills__container--right {
   display: flex;
@@ -305,11 +456,12 @@ body {
   .skills__container {
     flex-direction: column-reverse;
     align-items: center;
-    padding: 82px 18px 103px 18px;
+    padding: 82px 0px 103px 0px;
   }
   .skills__container--left {
     padding: 98px 0px 0px 0px;
     width: 100%;
+    align-items: center;
   }
   .skills__left--title {
     text-align: center;
@@ -319,9 +471,16 @@ body {
     width: 100%;
   }
   .skills__photo {
-    width: 339px;
-    height: 275px;
+    max-width: 285px;
+    max-height: 230px;
   }
+  .skills__container--right {
+    width: 100%;
+  }
+  .skills__left--text {
+    padding: 0px 130px 20px 0px;
+  }
+
 }
 /* ---VIDEO----------------------------------------------------------------------- */
 .video {
@@ -345,6 +504,9 @@ body {
   line-height: 38px;
   letter-spacing: 0em;
   text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px 0px 50px 0px;
 }
 .video__text {
   font-size: 16px;
@@ -352,6 +514,8 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #727272;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .video__content {
   padding: 57px 0px 0px 0px;
@@ -377,18 +541,22 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 700px) {
   .video__img {
-    width: 339px;
-    height: 185px;
+    max-width: 285px;
+    max-height: 230px;
   }
   .play {
     transform: translate(180%, -180%);
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 60px;
   }
   .video__container {
     padding: 91px 18px 91px 18px;
     min-height: auto;
   }
+  .video__title {
+    padding: 0px 0px 34px 0px;
+  }
+
 }
 /* ---PROJECTS----------------------------------------------------------------------- */
 
@@ -474,12 +642,17 @@ body {
   line-height: 38px;
   letter-spacing: 0em;
   text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px 0px 50px 0px;
 }
 .web-site__title--p {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .web-site__main {
   display: flex;
@@ -513,19 +686,6 @@ body {
 ::placeholder {
   text-indent: 20px;
 }
-.content__button {
-  background: #34547A;
-  border: none;
-  min-width: 225px;
-  min-height: 65px;
-}
-.button__text {
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: white;
-}
 /* ---WEB-SITE MEDIA----------------------------------------------------------------------- */
 @media only screen and (min-width: 320px) and (max-width: 540px) {
   .web-site__title--h2 {
@@ -556,24 +716,16 @@ body {
     max-width: 342px;
   }
   .web-site__main--message {
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0px 48px 0px;
   }
   .message {
     min-width: 255px;
   }
-  .content__button {
-    min-width: 190px;
-    min-height: 55px;
-  }
   .button__text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 23px;
     text-align: center;
   }
-  .name,
-::placeholder {
-  text-align: center;
-}
 }
 /* ---FOOTER----------------------------------------------------------------------- */
 .footer {
@@ -588,6 +740,9 @@ body {
   width: 50%;
   align-items: center;
 }
+.left__container{
+  padding: 50px 0px 50px 0px;
+}
 .left__container--title {
   font-size: 21px;
   font-weight: 500;
@@ -595,6 +750,9 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 20px 0px;
 }
 .left__container--text {
   font-size: 13px;
@@ -602,6 +760,8 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .footer__right {
   display: flex;
@@ -617,7 +777,7 @@ body {
   .footer__container {
     flex-direction: column;
     align-items: center;
-    padding: 50px 90px 39px 90px;
+    padding: 50px 60px 39px 60px;
   }
   .footer__left {
     justify-content: center;
@@ -632,6 +792,9 @@ body {
   }
   .logo_vk:not(:last-child) {
     padding: 0;
+  }
+  .left__container{
+    padding: 50px 0px 50px 0px;
   }
 }
 
